@@ -1,0 +1,25 @@
+.error{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+  text-align: center;
+  padding: 20px;
+}
+
+.error a{
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #000;
+  border-radius: 12px;
+  color: #fff;
+
+  transition: all .4s;
+}
+
+.error a:hover{
+  background-color: #7f7f7f;
+  color: #000;
+}

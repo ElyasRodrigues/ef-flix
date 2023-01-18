@@ -1,0 +1,148 @@
+.loading-movie{
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 80px);
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-detail{
+  margin: 20px 0;
+  display: flex;
+  padding: 0 16px;
+  width: 90%;
+  background-color: #c4c4c4;
+  border: 2px solid black;
+  border-radius: 12px;
+  gap: 40px;
+}
+
+.movie-detail img{
+  margin: 10px 0;
+  height: 520px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.area-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* TITULO */
+.info h1{
+  margin: 14px 0;
+}
+
+/* SUBTITULO / TAGLINE */
+.info p{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+/* AVALIACAO */
+.info strong{
+  padding-top: 14px;
+  padding-bottom: 20px;
+}
+
+/* SINOPSE */
+.info h3{
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+.info span{
+  margin: 8px 0;
+  font-size: 17px;
+}
+
+.area-btns{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* BOTOES */
+.area-btns button{
+  margin: 14px 12px 22px 0;
+  
+  font-size: 20px;
+  border: 0;
+  outline: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #000;
+
+  transition: all .4s;
+}
+.area-btns button:hover{
+  background-color: brown;
+  color: #fff;
+}
+
+.area-btns a{
+  text-decoration: none;
+  color: #000;
+  transition: all .4s;
+}
+.area-btns button a:hover{
+  background-color: brown;
+  color: #fff;
+}
+
+@media (max-width: 807px){
+  .movie-detail img{
+    height: 480px;
+  }
+}
+
+@media (max-width: 769px){
+  .movie-detail {
+    flex-direction: column;
+  }
+  .info h1{
+    margin-top: -32px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 442px){
+  .movie-detail img{
+    height: 420px;
+  }
+  .info h1{
+    margin-top: -42px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 395px){
+  .movie-detail img{
+    height: 380px;
+  }
+  .info h1{
+    font-size: 20px;
+  }
+  .info p{
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .info strong{
+    font-size: 14px;
+  }
+
+  .info h3{
+    font-size: 16px;
+  }
+  .info span{
+    font-size: 15px;
+  }
+
+  .area-btns{
+    margin-top: 20px;
+  }
+}

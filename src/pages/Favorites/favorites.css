@@ -1,0 +1,84 @@
+.not-movies{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.favorites{
+  margin-top: 24px;
+  max-width: 720px;
+  width: 100%;
+}
+
+.favorites h1{
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.favorites span{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.favorites ul{
+  margin: 0 15px;
+}
+
+.favorites ul li{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 11px;
+  padding-bottom: 11px;
+  border-bottom: 2px solid #000;
+}
+
+.fav-btns{
+  gap: 10px;
+}
+
+.favorites div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorites div a{
+  text-decoration: none;
+  background-color: #fff;
+  padding: 8px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .4s;
+}
+.favorites div a:hover{
+  background-color: #cfcece;
+}
+
+.favorites div button{
+  padding: 8px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .4s;
+}
+.favorites div button:hover{
+  background-color: #cfcece;
+}
+
+@media (max-width: 540px){
+  .favorites ul li{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .fav-btns{
+    gap: 60px;
+  }
+  
+}
