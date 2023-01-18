@@ -1,0 +1,12 @@
+.loadingTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.search h2{
+  /* display: block; */
+  text-align: center;
+  margin-top: 22px;
+}

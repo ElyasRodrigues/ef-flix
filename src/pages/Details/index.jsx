@@ -73,6 +73,12 @@ function Details() {
             <h1>{details.title}</h1>
             <p>{details.tagline}</p>
 
+            
+
+            {details.release_date && 
+              <p>Data de lançamento: {new Date(details.release_date).toLocaleDateString("br")}</p>
+            }
+
             <strong>Avaliação: {(details.vote_average).toFixed(1)} / 10</strong>
 
             <h3>Sinopse</h3>
